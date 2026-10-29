@@ -29,11 +29,17 @@ grep -a "Failed password" "$LOG" \
   | sort | uniq -c | sort -rn
 ```
 `#!/bin/bash` - noting, that file is bash, so it can work later
+
 `LOG=/var/log/auth.log` - adding a variable `LOG`, that contains info about directory that script should work in
+
 `grep -a "Failed password" "$LOG" \` - finding ever "Failed password" in `LOG` file
+
 `  | grep -oE 'from [0-9.]+' \` - `-o` lets output contain only coinciding part, `-E` includes expanded regular expressions, `from [0-9.]+` includes one and more numbers plus dot
+
 `  | awk '{print $2}' \` - takes only second part from grepped IP-address line
+
 `  | sort | uniq -c | sort -rn` - sorting and deleting doubling lines
+
 \ is used for separating codeline on readable parts
 
 Make file executable and launch it
