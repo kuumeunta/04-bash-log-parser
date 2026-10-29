@@ -43,9 +43,9 @@ grep -a "Failed password" "$LOG" \
 \ is used for separating codeline on readable parts
 
 ***
-![scriptft](screenshots/scriptft.png)
-
 Make file executable and launch it
+
+![scriptft](screenshots/scriptft.png)
 ```
 sudo cmod +x logcounter.sh
 sudo ./logcounter.sh
