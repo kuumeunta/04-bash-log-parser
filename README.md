@@ -50,6 +50,8 @@ Make file executable and launch it
 sudo cmod +x logcounter.sh
 sudo ./logcounter.sh
 ```
+Output shows exactly what i expected, numbers of bad requests and mainvm IP-address
+
 ##
 ##
 
