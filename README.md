@@ -52,8 +52,11 @@ sudo ./logcounter.sh
 ```
 Output shows exactly what i expected, numbers of bad requests and mainvm IP-address
 
-##
-##
+## Updating the script
+
+![updatedscript](screenshots/updated_script.png)
+
+
 
 ## Problems and conclusions
 Problems:
